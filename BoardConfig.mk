@@ -264,5 +264,9 @@ WIFI_HIDL_FEATURE_AWARE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
+# Releasetools
+TARGET_RECOVERY_UPDATER_LIBS := librecovery_updater_asus
+TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
+
 # Inherit the proprietary files
 -include vendor/asus/X00T/BoardConfigVendor.mk
