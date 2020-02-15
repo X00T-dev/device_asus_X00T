@@ -53,6 +53,7 @@ PRODUCT_PACKAGES += \
     android.hardware.soundtrigger@2.1-impl \
     audio.a2dp.default \
     audio.primary.sdm660 \
+    audio_amplifier.sdm660 \
     audio.r_submix.default \
     audio.usb.default \
     libaudio-resampler \
