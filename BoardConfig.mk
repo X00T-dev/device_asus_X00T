@@ -140,6 +140,9 @@ DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
+ODM_MANIFEST_SKUS += NFC
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
