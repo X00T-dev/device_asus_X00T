@@ -257,7 +257,6 @@ PRODUCT_PACKAGES += \
 # Init
 PRODUCT_PACKAGES += \
     init.class_main.sh \
-    init.goodix.sh \
     init.msm.usb.configfs.rc \
     init.qcom.post_boot.sh \
     init.qcom.early_boot.sh \
@@ -267,7 +266,6 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.sh \
     init.recovery.qcom.rc \
     init.target.rc \
-    init.xiaomi_parts.rc \
     init.verity.rc \
     ueventd.qcom.rc
 
