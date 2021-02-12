@@ -21,11 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# Set BootAnimation Resolution
+TARGET_BOOT_ANIMATION_RES := 720
+
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 PRODUCT_BRAND := asus
-PRODUCT_DEVICE := X00TD
+PRODUCT_DEVICE := X00T
 PRODUCT_MANUFACTURER := asus
 PRODUCT_NAME := lineage_X00T
 PRODUCT_MODEL := Zenfone Max Pro M1
