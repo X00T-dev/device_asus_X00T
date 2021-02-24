@@ -125,7 +125,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 PRODUCT_PACKAGES += \
-    Camera2
+    Camera2 \
+    camera.sdm660
 
 # Codec2 modules
 PRODUCT_PACKAGES += \

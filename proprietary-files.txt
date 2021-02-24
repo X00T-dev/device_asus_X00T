@@ -182,24 +182,19 @@ vendor/lib64/vendor.qti.hardware.btconfigstore@1.0.so|e08969ef1897ec5958894323f7
 
 # Camera
 system/lib64/libseemore.so
-vendor/lib/hw/camera.sdm660.so
 vendor/lib/libdepthmapwrapper.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libgui_vendor.so
-vendor/lib/libhal_dbg.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegdmahw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmm-qcamera.so
 vendor/lib/libmmcamera_sonyimx135_eeprom.so
 vendor/lib/libmmjpeg.so
-vendor/lib/libmmjpeg_interface.so
-vendor/lib/libmmlib2d_interface.so
 vendor/lib/libmmqjpegdma.so
 vendor/lib/libmmqjpeg_codec.so
 vendor/lib/libmorpho_video_refiner.so
 vendor/lib/libmpbase.so
-vendor/lib/libqomx_core.so
 vendor/lib/libqomx_jpegdec.so
 vendor/lib/libqomx_jpegenc.so
 vendor/lib/libqomx_jpegenc_pipe.so
@@ -235,14 +230,6 @@ vendor/lib/libactuator_ov16885_holitech_16m_fp5510a.so
 vendor/lib/libactuator_ov16885_ofilm_16m_dw9714v.so
 vendor/lib/libactuator_pseudo.so
 vendor/lib/libactuator_rohm_bu64243gwz.so
-
-# Camera-arcsoft
-vendor/lib/libarcsoft_beautyshot.so
-vendor/lib/libarcsoft_dualcam_refocus.so
-vendor/lib/libarcsoft_hdr.so
-vendor/lib/libarcsoft_hdr_detection.so
-vendor/lib/libarcsoft_night_shot.so
-vendor/lib/libarcsoft_picselfie_algorithm.so
 
 # Camera-bin
 vendor/bin/mm-qcamera-app
@@ -1948,7 +1935,6 @@ vendor/lib/libmmcamera_imx362_gt24c64a.so
 vendor/lib/libmmcamera_imx376.so
 vendor/lib/libmmcamera_imx378.so
 vendor/lib/libmmcamera_imx519.so
-vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmcamera_irs1645.so
 vendor/lib/libmmcamera_isp_abf48.so
 vendor/lib/libmmcamera_isp_aec_bg_stats47.so
