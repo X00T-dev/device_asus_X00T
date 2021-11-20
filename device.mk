@@ -330,16 +330,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(DEVICE_PATH)/overlay \
-    $(DEVICE_PATH)/overlay-awaken \
     $(DEVICE_PATH)/overlay-lineage
 
 # RRO configuration
 TARGET_USES_RRO := true
 
-# Overlay-Monet
-PRODUCT_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay-monet
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(DEVICE_PATH)/overlay-monet/frameworks/base/packages/SystemUI
-    
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
