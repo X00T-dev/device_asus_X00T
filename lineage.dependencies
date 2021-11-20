@@ -1,0 +1,8 @@
+[
+  {
+    "remote"      : "github",
+    "repository"  : "X00T-dev/vendor_asus",
+    "target_path" : "vendor/asus",
+    "branch"      : "12"
+  }
+]
