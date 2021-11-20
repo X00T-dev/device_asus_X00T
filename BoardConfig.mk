@@ -4,20 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Common Tree Path
-COMMON_PATH := device/xiaomi/sdm660-common
+# Device Tree Path
+DEVICE_PATH := device/asus/X00T
 
-# A/B
-ifeq ($(ENABLE_AB), true)
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS ?= \
-    boot \
-    system \
-    vendor
-BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
-BOARD_USES_RECOVERY_AS_BOOT := true
-TARGET_NO_RECOVERY := true
-endif
+BOARD_VENDOR := asus
 
 # APEX image
 ifeq ($(ENABLE_APEX), true)
@@ -59,14 +49,14 @@ USE_CUSTOM_AUDIO_POLICY := 1
 USE_XML_AUDIO_POLICY_CONF := 1
 
 # Battery Saver
-TARGET_POWERHAL_MODE_EXT := $(COMMON_PATH)/power-libperfmgr/power/power-mode.cpp
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power-libperfmgr/power/power-mode.cpp
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_QCOM := true
 BOARD_HAS_QCA_BT_SOC := "cherokee"
 BLUETOOTH_HCI_USE_MCT := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(DEVICE_PATH)/bluetooth
 QCOM_BT_USE_BTNV := true
 QCOM_BT_USE_SMD_TTY := true
 
@@ -102,7 +92,7 @@ TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_USES_QCNE := true
 
 # ConfigFS
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
+TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
 # Display
 BOARD_USES_ADRENO := true
@@ -128,15 +118,15 @@ GNSS_HIDL_VERSION := 2.1
 LOC_HIDL_VERSION := 4.0
 
 # HIDL
-DEVICE_FRAMEWORK_MANIFEST_FILE := $(COMMON_PATH)/framework_manifest.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(DEVICE_PATH)/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/compatibility_matrix.xml
 
 # HWUI
 HWUI_COMPILE_FOR_PERF := true
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_sdm660
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_sdm660
 TARGET_PLATFORM_DEVICE_BASE := /devices/soc/
 TARGET_RECOVERY_DEVICE_MODULES := libinit_sdm660
 
@@ -156,7 +146,7 @@ BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_VERSION := 4.19
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sdm660
+TARGET_KERNEL_SOURCE := kernel/asus/sdm660
 
 # Enable stats logging in LMKD
 TARGET_LMKD_STATS_LOG := true
@@ -164,21 +154,17 @@ TARGET_LMKD_STATS_LOG := true
 # Keymaster
 TARGET_PROVIDES_KEYMASTER := true
 
-# Metadata
-BOARD_USES_METADATA_PARTITION := true
-
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-ifneq ($(ENABLE_AB), true)
-BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
-BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 67108864
-endif
-BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
+BOARD_CACHEIMAGE_PARTITION_SIZE := 268435456
+BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3221225472
-BOARD_VENDORIMAGE_PARTITION_SIZE := 2147483648
+BOARD_SYSTEMIMAGE_PARTITION_TYPE := ext4
+BOARD_VENDORIMAGE_PARTITION_SIZE := 838860800
 BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE := ext4
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 55155080704
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
 
@@ -197,10 +183,10 @@ TARGET_PER_MGR_ENABLED := true
 
 # Properties
 BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
-TARGET_ODM_PROP += $(COMMON_PATH)/properties/odm.prop
-TARGET_SYSTEM_EXT_PROP += $(COMMON_PATH)/properties/system_ext.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/properties/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/properties/vendor.prop
+TARGET_ODM_PROP += $(DEVICE_PATH)/properties/odm.prop
+TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/properties/system_ext.prop
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/properties/system.prop
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/properties/vendor.prop
 
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
@@ -208,11 +194,11 @@ TARGET_USES_QCOM_BSP := false
 
 # Recovery
 ifneq ($(filter lavender,$(TARGET_DEVICE)),)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_A.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_A.qcom
 else ifeq ($(ENABLE_AB), true)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_AB.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_AB.qcom
 else
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 endif
 
 # RIL
@@ -221,9 +207,9 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # SELinux
 include device/qcom/sepolicy-legacy-um/SEPolicy.mk
-BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
-SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 
 # SurfaceFlinger
 TARGET_USE_AOSP_SURFACEFLINGER := true
@@ -261,4 +247,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit the proprietary files
--include vendor/xiaomi/sdm660-common/BoardConfigVendor.mk
+-include vendor/asus/X00T/BoardConfigVendor.mk
