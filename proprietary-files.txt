@@ -2276,6 +2276,40 @@ vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
 vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
 
+# Firmware
+vendor/firmware/a225p5_pm4.fw
+vendor/firmware/a225_pfp.fw
+vendor/firmware/a225_pm4.fw
+vendor/firmware/a300_pfp.fw
+vendor/firmware/a300_pm4.fw
+vendor/firmware/a330_pfp.fw
+vendor/firmware/a330_pm4.fw
+vendor/firmware/a420_pfp.fw
+vendor/firmware/a420_pm4.fw
+vendor/firmware/a508_zap.b00
+vendor/firmware/a508_zap.b01
+vendor/firmware/a508_zap.b02
+vendor/firmware/a508_zap.elf
+vendor/firmware/a508_zap.mdt
+vendor/firmware/a512_zap.b00
+vendor/firmware/a512_zap.b01
+vendor/firmware/a512_zap.b02
+vendor/firmware/a512_zap.elf
+vendor/firmware/a512_zap.mdt
+vendor/firmware/a530v1_pfp.fw
+vendor/firmware/a530v1_pm4.fw
+vendor/firmware/a530v2_seq.fw2
+vendor/firmware/a530v3_gpmu.fw2
+vendor/firmware/a530v3_seq.fw2
+vendor/firmware/a530_gpmu.fw2
+vendor/firmware/a530_pfp.fw
+vendor/firmware/a530_pm4.fw
+vendor/firmware/a540_gpmu.fw2
+vendor/firmware/a630_gmu.bin
+vendor/firmware/a630_sqe.fw
+vendor/firmware/leia_pfp_470.fw
+vendor/firmware/leia_pm4_470.fw
+
 # FM - from LA.UM.8.2.1.r1-05600-sdm660
 -product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so|8e13cca2be4c4f9812d656e4cb15bd524fdfdf12
 -product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
@@ -2332,16 +2366,6 @@ vendor/lib64/vendor.qti.gnss@3.0.so|f13c5fffe0fbe5bfc1384d7449f5820f75104c33
 vendor/lib64/vendor.qti.gnss@4.0-service.so|3c75d133af5193436167380aa89abcf05d079968
 vendor/lib64/vendor.qti.gnss@4.0.so|cc2504016d0ce0afbc58ac95207a4b913f2ccfe9
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so|19a1f7ffb8118c207aa8cb2318996605771c339a
-
-# GPU firmware - from jasmine-user-10-QKQ1.190910.002-V11.0.19.0.QDIMIXM
-vendor/firmware/a512_zap.b00|85a7fc0008f9a2071d8b3d0cc212b19141633267
-vendor/firmware/a512_zap.b01|e0b7818182fac232182bfb70a4f43ec3e36779b9
-vendor/firmware/a512_zap.b02|33cc074ca840ae59f310a0e217aa7409afb30ac2
-vendor/firmware/a512_zap.elf|5dd4278559e9276f641bb121d7577d1a3ca3fcbb
-vendor/firmware/a512_zap.mdt|cc149dda6e109dd3f1f92e74349665a8c521ff79
-vendor/firmware/a530_gpmu.fw2|706da8d5ee565dcf456341f805ee75a40773f65a
-vendor/firmware/a530_pfp.fw|d027c70fde64241ec13160d09ee1b6c272974a4b
-vendor/firmware/a530_pm4.fw|b1cf625b5552b99839687f479c124ac5daca2ca2
 
 # Graphics - from LA.UM.9.6.2.r1-03300-89xx.0
 system/lib/libsdm-disp-apis.so|39d52eb5e311950a6b8eca35ac53758e7297e9cf
