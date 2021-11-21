@@ -2811,6 +2811,21 @@ system_ext/lib64/vendor.qti.imsrtpservice@3.0.so|7157c5a2852683df0a50a588a09b7e5
 vendor/bin/tftp_server|f096a58e024ef6d1ad78da49388c183747d384da
 vendor/etc/init/vendor.qti.tftp.rc|b27f188cbffba470a4510d50e46ff7c8446c22cb
 
+# Sensor-configs
+vendor/etc/sensors/sensor_def_qcomdev.conf
+
+# Sensors
+-product/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar
+vendor/lib/hw/sensors.sdm660_64.so
+vendor/lib/libcalmodule_common.so
+vendor/lib/sensors.native.so
+vendor/lib/sensors.ssc.so
+vendor/lib64/hw/sensors.sdm660_64.so
+vendor/lib64/libcalmodule_common.so
+vendor/lib64/libsensorndkbridge.so
+vendor/lib64/sensors.native.so
+vendor/lib64/sensors.ssc.so
+
 # Sensors - from LA.UM.8.2.1.r1-05600-sdm660
 product/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|bda110fc8102be6f88bd0e364819d15d9c0c3744
 product/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|67620ca191213b83e898ee401807eb8385b0020d
