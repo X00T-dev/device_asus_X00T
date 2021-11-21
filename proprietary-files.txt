@@ -2210,6 +2210,20 @@ vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc|3c024c7135ec3dd8658624
 vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so|fbd4ced5df7529fac123bc3cc5426cb8c2bd2842
 vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so|17f648402c874e4f981caadd91438a525089e35d
 
+# Fingerprint
+-vendor/app/QFingerprintService/QFingerprintService.apk
+vendor/bin/qfp-daemon
+vendor/etc/permissions/qti_fingerprint_interface.xml
+vendor/lib/vendor.qti.hardware.fingerprint@1.0.so
+vendor/lib64/hw/cdfinger.fingerprint.default.so
+vendor/lib64/hw/fingerprint.default.so
+vendor/lib64/libgf_ca.so
+vendor/lib64/libgf_hal.so
+vendor/lib64/libqfp-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
+vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0.so
+vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so
+
 # FM - from LA.UM.8.2.1.r1-05600-sdm660
 -product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so|8e13cca2be4c4f9812d656e4cb15bd524fdfdf12
 -product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
