@@ -2955,3 +2955,6 @@ vendor/lib64/libthermalioctl.so|7c7a784d8ead3d932d164cfc953b09e621060d90
 -vendor/lib64/libtime_genoff.so|f5a0dec271a7b79da80230d8988a6b602f333322
 vendor/bin/time_daemon|a27ac4aeafb41158b96046edbd553ae76835b4ed
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
+
+# Wifi - from Cats62pro
+vendor/bin/cnss-daemon|3137d9a479fe6e363896fe77248bcb488fae2c2e
