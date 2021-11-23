@@ -42,7 +42,11 @@ LOCAL_SRC_FILES += \
         HAL3/QCamera3CropRegionMapper.cpp \
         HAL3/QCamera3StreamMem.cpp
 
+ifeq (1,$(filter 1,$(shell echo "$$(( $(PLATFORM_SDK_VERSION) >= 31 ))" )))
+LOCAL_CFLAGS := -Wall -Wextra -Werror -Wno-compound-token-split-by-macro
+else
 LOCAL_CFLAGS := -Wall -Wextra -Werror
+endif
 LOCAL_CFLAGS += -DFDLEAK_FLAG
 LOCAL_CFLAGS += -DMEMLEAK_FLAG
 #HAL 1.0 source
@@ -188,7 +192,7 @@ LOCAL_SHARED_LIBRARIES += libdualcameraddm
 LOCAL_CFLAGS += -DENABLE_QC_BOKEH
 endif
 ifeq ($(USE_DISPLAY_SERVICE),true)
-LOCAL_SHARED_LIBRARIES += android.frameworks.displayservice@1.0 libhidltransport libhidlbase
+LOCAL_SHARED_LIBRARIES += android.frameworks.displayservice@1.0 android.hidl.base@1.0 libhidlbase
   ifneq ($(filter P% p% Q% q%,$(TARGET_PLATFORM_VERSION)),)
     LOCAL_SHARED_LIBRARIES += libhidltransport
   endif
@@ -207,9 +211,17 @@ LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
 endif
 
 ifneq (,$(filter $(strip $(TARGET_KERNEL_VERSION)),4.14 4.19))
-    ifeq ($(TARGET_BOARD_PLATFORM), sdm660)
+    ifneq (,$(filter sdm660 msm8937 msm8953, $(TARGET_BOARD_PLATFORM)))
         LOCAL_CFLAGS += -DSUPPORT_ONLY_HAL3
     endif
+endif
+
+ifneq (,$(filter $(strip $(TARGET_KERNEL_VERSION)),4.14 4.19))
+ifneq (,$(filter $(TRINKET) sdm660 msm8937 msm8953, $(TARGET_BOARD_PLATFORM)))
+ifeq (,$(filter P% p% Q% q% ,$(TARGET_PLATFORM_VERSION)))
+LOCAL_CFLAGS += -DSUPPORT_POWER_HINT_XML
+endif
+endif
 endif
 
 LOCAL_STATIC_LIBRARIES := android.hardware.camera.common@1.0-helper
