@@ -15,7 +15,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light@2\.0-service\.asus_X00T                u:object_r:hal_light_default_exec:s0
 
 # Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.X00T-libperfmgr                                          u:object_r:hal_power_default_exec:s0
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power\.stats@1\.0-service\.mock                                                  u:object_r:hal_power_stats_default_exec:s0
 
 # Root files
