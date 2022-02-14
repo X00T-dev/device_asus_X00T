@@ -2300,6 +2300,17 @@ vendor/firmware/a630_sqe.fw
 vendor/firmware/leia_pfp_470.fw
 vendor/firmware/leia_pm4_470.fw
 
+# Graphics firmware
+vendor/firmware/cppf.b00
+vendor/firmware/cppf.b01
+vendor/firmware/cppf.b02
+vendor/firmware/cppf.b03
+vendor/firmware/cppf.b04
+vendor/firmware/cppf.b05
+vendor/firmware/cppf.b06
+vendor/firmware/cppf.b07
+vendor/firmware/cppf.mdt
+
 # FM - from LA.UM.8.2.1.r1-05600-sdm660
 -product/lib/vendor.qti.hardware.fm@1.0.so:system_ext/lib/vendor.qti.hardware.fm@1.0.so|8e13cca2be4c4f9812d656e4cb15bd524fdfdf12
 -product/lib64/vendor.qti.hardware.fm@1.0.so:system_ext/lib64/vendor.qti.hardware.fm@1.0.so|027c226838e80a04209e5fb6a8882ce78c3b4222
