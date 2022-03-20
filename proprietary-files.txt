@@ -2268,9 +2268,7 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|c35e1a6f9a6faff1906
 -vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 
 # DRM (Widevine) - from Cat S62 Pro
-vendor/lib/mediadrm/libdrmclearkeyplugin.so|e57be6f6bc1ea8fcc386e2a0d36bc645c954f303
 vendor/lib/mediadrm/libwvdrmengine.so|35eac1e844f6045be0cdacb8e20a6eb9f51891a3
-vendor/lib64/mediadrm/libdrmclearkeyplugin.so|c8bd63e9dd19d29b8dc05f2e3405e280fc12fb86
 vendor/lib64/mediadrm/libwvdrmengine.so|eef10067daf437a2c302e668967a7c8c55fddbe9
 vendor/lib64/libwvhidl.so|acf4870a0b10af74a40a4c6180f2c10a1706ddbd
 
@@ -2373,22 +2371,16 @@ vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50
 -vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
 vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|7db657be73603c41b73f7b96d86c824563fd206c
 vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|4735a90e986bd707979451c50eabca3c381bb9fc
-vendor/lib64/libbatching.so|911f7bb81362578055529bd2302374f6ed076e32
 vendor/lib64/libcdfw.so|76c26b387a275ec9307bfef2bd77a53af875b951
 vendor/lib64/libcdfw_remote_api.so|751452d4d3aca9783e27226ba095a6c3e402937f
 vendor/lib64/libdataitems.so|026d7c55cc4aec0fa8c7bf5a9a4ee6ceedbefcd7
 vendor/lib64/libgdtap.so|85163b1852934848a64ac0c36cf03192b7871a57
-vendor/lib64/libgeofencing.so|849466a6fd9af1ec7a9925b938b62b713adef6ba
-vendor/lib64/libgnss.so|d7dd31ca11a03e556191d2d7f7ed783f380f410a
 vendor/lib64/libgnsspps.so|a936f15ea4ebe8f705300747c6ecc8150a0584e1
-vendor/lib64/libgps.utils.so|40f18cede8bb963d2023aa9ef698b52ba4d6c92b
 vendor/lib64/libizat_client_api.so|a82d387c3095f8b8c48d4e0e076c28412a752ecf
 vendor/lib64/libizat_core.so|b0cb0478ceb14554a5208d85e5c35ecf9d73937d
 vendor/lib64/liblbs_core.so|993d5f2169542bfbec193f962229fbd1c0779de5
 vendor/lib64/libloc_api_v02.so|5317059c6fec22f1492fad50da44976194c086d6
-vendor/lib64/libloc_core.so|4d917379910fe04072be2daf8f0e0cbc72767b41
 vendor/lib64/libloc_socket.so|a09d93e0868c9081aee6a532ccad88c1c682deb7
-vendor/lib64/liblocation_api.so|bd32d52dae25e1fc05c40a7de18e95a9a41f2ad7
 vendor/lib64/liblocationservice.so|3f6f69cb520d9f808409195b16951eb82b4f945a
 vendor/lib64/liblocationservice_glue.so|7b3acc64d7f3cc0c78d3164bf637115fd4bac90b
 vendor/lib64/liblowi_client.so|9db4ce5f62b6be6b3bf29199a36bdf7183606897
@@ -2484,9 +2476,6 @@ vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
 vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-vendor/lib64/libkeystore-engine-wifi-hidl.so
-vendor/lib64/libkeystore-wifi-hidl.so
-vendor/lib64/libqtikeymaster4.so
 
 # Keymaster - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
@@ -2980,7 +2969,6 @@ vendor/lib/sensors.native.so
 vendor/lib/sensors.ssc.so
 vendor/lib64/hw/sensors.sdm660_64.so
 vendor/lib64/libcalmodule_common.so
-vendor/lib64/libsensorndkbridge.so
 vendor/lib64/sensors.native.so
 vendor/lib64/sensors.ssc.so
 
