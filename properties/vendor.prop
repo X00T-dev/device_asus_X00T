@@ -128,25 +128,12 @@ persist.vendor.data.profile_update=true
 # DRM
 drm.service.enabled=true
 
-# Dirac
-ro.audio.soundfx.dirac=true
-persist.audio.dirac.speaker=true
-persist.dirac.acs.controller=qem
-persist.dirac.acs.ignore_error=1
-persist.dirac.acs.storeSettings=1
-
 # Display
-debug.cpurend.vsync=false
-debug.hwui.use_buffer_age=false
 vendor.display.disable_skip_validate=1
 vendor.gralloc.enable_fb_ubwc=1
-vendor.gralloc.disable_ahardware_buffer=1
 debug.gralloc.enable_fb_ubwc=1
-vendor.opengles.version=196610
-dev.pm.dyn_samplingrate=1
-persist.demo.hdmirotationlock=false
+vendor.video.disable.ubwc=1
 ro.opengles.version=196610
-ro.vendor.display.cabl=2
 vendor.display.enable_default_color_mode=1
 
 # GPS
@@ -186,9 +173,6 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # Netflix
 ro.netflix.bsp_rev=Q660-13149-1
-
-# OEM Unlock reporting
-ro.oem_unlock_supported=1
 
 # QCOM
 persist.vendor.qcomsysd.enabled=1
@@ -237,13 +221,6 @@ ro.vendor.qti.va_aosp.support=1
 ro.telephony.default_network=22,20
 ro.telephony.default_cdma_sub=0
 vendor.rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
-
-# Rendering
-debug.egl.hw=1
-debug.enable.sglscale=1
-debug.sf.disable_hwc=0
-debug.sf.gpu_comp_tiling=1
-debug.sf.recomputecrop=0
 
 # Sensor
 ro.vendor.qti.sdk.sensors.gestures=false
