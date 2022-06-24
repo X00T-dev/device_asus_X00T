@@ -2474,13 +2474,10 @@ vendor/bin/msm_irqbalance|0e967f5c7eaf8d863a50996459101be47adf96a2
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
 vendor/etc/init/android.hardware.keymaster@3.0-service-qti.rc
-vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so
 vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so
-
-# Keymaster - from LA.UM.8.2.1.r1-05600-sdm660
-vendor/lib64/libkeymasterdeviceutils.so|ea44915adfee57f1bd813b2184987565d396ab82
-vendor/lib64/libkeymasterprovision.so|c4a8047563fcdefa53a3418b5916e82988426b74
-vendor/lib64/libkeymasterutils.so|2791994395cd10eb1092b8bd8fea15987e17421d
+vendor/lib64/libkeymasterdeviceutils.so
+vendor/lib64/libkeymasterprovision.so
+vendor/lib64/libkeymasterutils.so
 
 # Listen - from LA.UM.8.2.1.r1-05600-sdm660
 vendor/lib/libadpcmdec.so|8c72aa1812bfa749f266020366894c8a3873d99c
