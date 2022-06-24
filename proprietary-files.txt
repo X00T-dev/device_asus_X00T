@@ -2620,6 +2620,14 @@ vendor/lib64/libqsocket.so|efd49b704a744efa7ef9424224d3ec2e2ed34c74
 vendor/lib64/libsmemlog.so|bae829da01576129a9a6b1d0089aaf2533ca7d61
 vendor/lib64/libsystem_health_mon.so|ed78e239c3f2bfcb6ebc219b00fbf5b2627bb1f5
 
+# QSEEcom Hal - from LA.UM.9.6.2.r1-04100-89xx.0
+vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|9bbbb98699438abb8da802c04b03f9a426e6140c
+vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
+vendor/lib/vendor.qti.hardware.qseecom@1.0.so|bdb5c822a6e4b8a550e8269ed7cce41ffce98c6c
+vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so|e29628919fae208784fb28450726abc94d080452
+vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|679c0f228e2f408e9c46c01f5cb44544d3c5452d
+vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|ce93054507fdda761073a1cb8c7ac2b1e9f59669
+
 # Radio - IMS - from LA.UM.9.12.r1-10800-SMxx50.0-AOSPA
 vendor/bin/imsdatadaemon|cbe7b46af4933c8e94fea493c8b34b9b0eb412fb
 vendor/bin/imsqmidaemon|4c2d846d121bb6b13878a67d5c7a8700ea04cbc6
