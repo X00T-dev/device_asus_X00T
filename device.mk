@@ -146,8 +146,10 @@ PRODUCT_PACKAGES += \
 
 # Crypto
 PRODUCT_PACKAGES += \
+    android.hardware.gatekeeper@1.0 \
     android.hardware.gatekeeper@1.0.vendor \
-    android.hardware.keymaster@3.0.vendor
+    android.hardware.keymaster@4.1 \
+    android.hardware.keymaster@4.1.vendor
 
 # Dalvik
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk )
